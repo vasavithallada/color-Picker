@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script>
+        function first() {
+          let code = document.getElementById("button1").textContent;
+          let bg = document.getElementById("colorPickerContainer").style.backgroundColor = "#e0e0e0";
+          let tag = document.getElementById("selectedColorHexCode").textContent = code;
+      }
+      
+      function second() {
+          let code = document.getElementById("button2").textContent;
+          let bg = document.getElementById("colorPickerContainer").style.backgroundColor = "#6fcf97";
+          let tag = document.getElementById("selectedColorHexCode").textContent = code;
+      }
+      
+      function third() {
+          let code = document.getElementById("button3").textContent;
+          let bg = document.getElementById("colorPickerContainer").style.backgroundColor = "#56ccf2";
+          let tag = document.getElementById("selectedColorHexCode").textContent = code;
+      }
+      
+      function fourth() {
+          let code = document.getElementById("button4").textContent;
+          let bg = document.getElementById("colorPickerContainer").style.backgroundColor = "#bb6bd9";
+          let tag = document.getElementById("selectedColorHexCode").textContent = code;
+      }
+  </script>
+  <style>
+      #selectedColorHexCode {
+          color: #49a6e9;
+      }
+      
+      .para {
+          background-color: #222222;
+          color: white;
+          padding: 12px;
+          margin-top: 10px;
+          border-radius: 10px;
+          font-weight: 600;
+          font-size: 20px;
+      }
+      
+      
+      .heading {
+          font-weight: bold;
+      }
+      
+      .main-bg {
+          height: 100vh;
+          font-family: Open Sans;
+          text-align: center;
+          padding-top: 60px;
+      }
+      
+      .one {
+          border-radius: 10px;
+          padding: 10px;
+          height: 70px;
+          width: 80px;
+          font-size: 12px;
+          background-color: #e0e0e0;
+      }
+      
+      .two {
+          border-radius: 10px;
+          padding: 10px;
+          height: 70px;
+          width: 80px;
+          font-size: 12px;
+          background-color: #6fcf97;
+      }
+      
+      .three {
+          border-radius: 10px;
+          padding: 10px;
+          height: 70px;
+          width: 80px;
+          font-size: 12px;
+          background-color: #56ccf2;
+      }
+      
+      .four {
+          border-radius: 10px;
+          padding: 10px;
+          height: 70px;
+          width: 80px;
+          font-size: 12px;
+          background-color: #bb6bd9;
+      }
+</style>
+</head>
+
+<body>
+    <div container-fluid class="main-bg" id="colorPickerContainer">
+        <h1 class="heading">Color Picker</h1>
+        <div>
+            <button id="button1" class="one" onclick="first()">#e0e0e0</button>
+            <button id="button2" class="two" onclick="second()">#6fcf97</button>
+            <button id="button3" class="three" onclick="third()">#56ccf2</button>
+            <button id="button4" class="four" onclick="fourth()">#bb6bd9</button>
+        </div>
+        <p class="para">Background Color : <span id="selectedColorHexCode">#fffff</span></p>
+        <p>Try clicking on one of the colors above to change the background color of this page!</p>
+    </div>
+</body>
+
+</html>
